@@ -66,3 +66,10 @@ jic.upload(target_img, server_endpoint, server_var_name, filename, additional_da
 
 Enjoy!
 
+## Issues (mostly on iOS and Android devices)
+
+It does not work on iOS Safari. First time a new image is loaded `canvas.toDataUrl` returns `data:;`; tried to fix it adding
+an `onload` event handler to the new created image but it doesn`t work either. Also:
+
+- [HTML5 Canvas drawImage ratio bug iOS](http://stackoverflow.com/questions/11929099/html5-canvas-drawimage-ratio-bug-ios)
+- [canvas.toDataURL does not result in image/jpeg data](http://stackoverflow.com/questions/15495221/canvas-todataurl-does-not-result-in-image-jpeg-data)
